@@ -41,12 +41,16 @@ export default function Navbar() {
       <div className="container-custom flex items-center justify-between px-4 lg:px-8">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 no-underline">
-          <Home className="w-6 h-6 text-primary" />
+          <Home className={`w-6 h-6 transition-colors ${!scrolled && isHomePage ? 'text-white' : 'text-primary'}`} />
           <div>
-            <span className="font-serif text-2xl font-bold text-text tracking-tight">
+            <span className={`font-serif text-2xl font-bold tracking-tight transition-colors ${
+              !scrolled && isHomePage ? 'text-white' : 'text-text'
+            }`}>
               Alisa
             </span>
-            <span className="hidden sm:inline text-xs text-primary ml-2 tracking-widest uppercase font-semibold">
+            <span className={`text-xs ml-2 tracking-widest uppercase font-semibold transition-colors ${
+              !scrolled && isHomePage ? 'text-accent drop-shadow-sm' : 'text-primary'
+            }`}>
               Realtor
             </span>
           </div>
@@ -61,7 +65,9 @@ export default function Navbar() {
               className={`px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 no-underline ${
                 location.pathname === link.to
                   ? 'text-primary bg-primary/10'
-                  : 'text-text font-medium hover:text-primary hover:bg-primary/5'
+                  : `font-medium hover:text-primary hover:bg-primary/5 transition-all ${
+                      !scrolled && isHomePage ? 'text-white drop-shadow-md' : 'text-text'
+                    }`
               }`}
             >
               {link.label}
@@ -73,7 +79,9 @@ export default function Navbar() {
         <div className="hidden lg:flex items-center gap-3">
           <a
             href="tel:3522304020"
-            className="flex items-center gap-2 text-sm text-text-light hover:text-primary transition-colors no-underline"
+            className={`flex items-center gap-2 text-sm transition-colors no-underline ${
+              !scrolled && isHomePage ? 'text-white hover:text-accent drop-shadow-sm' : 'text-text-light hover:text-primary'
+            }`}
           >
             <Phone className="w-4 h-4" />
             (352) 230-4020

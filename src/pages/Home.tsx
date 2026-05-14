@@ -33,24 +33,24 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
         {/* Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-primary-dark/90 via-primary/80 to-accent/60 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary-dark/95 via-primary-dark/85 to-accent-dark/70 z-10" />
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: "url('/images/hero-home.jpg')" }}
         />
 
         {/* Content */}
-        <div className="relative z-20 container-custom px-4 lg:px-8 text-center pt-20">
+        <div className="relative z-20 container-custom px-6 lg:px-8 text-center pt-28 pb-12">
           <div className="max-w-3xl mx-auto">
             <span className="inline-block px-4 py-2 bg-white/15 backdrop-blur-sm rounded-full text-white text-sm font-medium mb-6 animate-fade-in">
               Your Trusted Ocala Real Estate Guide
             </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif font-bold text-white mb-6 animate-fade-in-up leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif font-bold text-white mb-6 animate-fade-in-up leading-tight drop-shadow-lg">
               Find Your Perfect
               <br />
-              <span className="italic font-normal">Florida Home</span>
+              <span className="italic font-normal text-accent drop-shadow-md">Florida Home</span>
             </h1>
-            <p className="text-lg md:text-xl text-white/85 max-w-xl mx-auto mb-10 animate-fade-in-up delay-200 leading-relaxed">
+            <p className="text-lg md:text-xl text-white/90 max-w-xl mx-auto mb-10 animate-fade-in-up delay-200 leading-relaxed drop-shadow-sm">
               I'm here to help guide you through every step — whether you're buying your first home, 
               selling, or exploring the Ocala area.
             </p>
@@ -123,13 +123,8 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               {/* Placeholder for Alisa's portrait */}
-              <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-card bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="w-32 h-32 rounded-full bg-white/50 mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-4xl font-serif text-primary">A</span>
-                  </div>
-                  <p className="text-text-light text-sm">Portrait photo coming soon</p>
-                </div>
+              <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-card bg-gradient-to-br from-primary/20 to-accent/20">
+                <img src="/images/about-alisa.jpg" alt="Alisa Realtor Portrait" className="w-full h-full object-cover" />
               </div>
             </div>
             <div>

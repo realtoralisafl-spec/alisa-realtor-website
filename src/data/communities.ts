@@ -21,7 +21,7 @@ export const communities: Community[] = [
       'Top-rated schools',
     ],
     type: 'city',
-    image: 'https://placehold.co/800x600/6B8F71/FFFFFF?text=Ocala',
+    image: '/images/community-ocala.jpg',
   },
   {
     id: 'summerfield',
@@ -36,7 +36,7 @@ export const communities: Community[] = [
       'Community-focused living',
     ],
     type: 'city',
-    image: 'https://placehold.co/800x600/C9A96E/FFFFFF?text=Summerfield',
+    image: '/images/community-summerfield.jpg',
   },
   {
     id: 'belleview',
@@ -51,7 +51,7 @@ export const communities: Community[] = [
       'Growing community',
     ],
     type: 'city',
-    image: 'https://placehold.co/800x600/6B8F71/FFFFFF?text=Belleview',
+    image: '/images/community-belleview.jpg',
   },
   {
     id: 'dunnellon',
@@ -66,7 +66,7 @@ export const communities: Community[] = [
       'Outdoor recreation paradise',
     ],
     type: 'city',
-    image: 'https://placehold.co/800x600/C9A96E/FFFFFF?text=Dunnellon',
+    image: '/images/community-dunnellon.jpg',
   },
   {
     id: 'beverly-hills',
@@ -81,7 +81,7 @@ export const communities: Community[] = [
       'Active community events',
     ],
     type: 'city',
-    image: 'https://placehold.co/800x600/6B8F71/FFFFFF?text=Beverly+Hills',
+    image: '/images/community-beverlyhills.jpg',
   },
   {
     id: 'gated-communities',
@@ -96,7 +96,7 @@ export const communities: Community[] = [
       'Well-maintained common areas',
     ],
     type: 'gated',
-    image: 'https://placehold.co/800x600/C9A96E/FFFFFF?text=Gated+Communities',
+    image: '/images/community-gated.jpg',
   },
   {
     id: '55-plus',
@@ -111,6 +111,6 @@ export const communities: Community[] = [
       'Like-minded neighbors',
     ],
     type: 'senior',
-    image: 'https://placehold.co/800x600/6B8F71/FFFFFF?text=55%2B+Communities',
+    image: '/images/community-55plus.webp',
   },
 ]

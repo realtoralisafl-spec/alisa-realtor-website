@@ -23,7 +23,8 @@ export default function Layout({ children }: LayoutProps) {
     <div className="min-h-screen flex flex-col">
       <ScrollToTop />
       <Navbar />
-      <main className={`flex-1 ${!isHomePage ? 'pt-20 lg:pt-24' : ''}`}>
+      {!isHomePage && <div className="h-20 lg:h-24" />}
+      <main className="flex-1">
         {children}
       </main>
       <Footer />

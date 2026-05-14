@@ -148,15 +148,14 @@ export default function Contact() {
                 </div>
               </div>
 
-              {/* Social Links Placeholder */}
               <div>
-                <p className="text-xs text-text-muted uppercase tracking-wider mb-3">Follow Along</p>
-                <div className="flex gap-3">
+                <p className="text-xs text-text-muted uppercase tracking-wider mb-4">Follow Along</p>
+                <div className="flex gap-4">
                   <a
                     href="https://www.facebook.com/AlisaBurnsRealtor"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2 bg-light-gray rounded-lg text-xs text-text-light hover:bg-primary hover:text-white transition-all no-underline"
+                    className="flex-1 py-3 bg-white border border-light-gray rounded-xl text-sm text-text-light hover:bg-primary hover:text-white hover:border-primary transition-all no-underline text-center font-medium shadow-sm"
                   >
                     Facebook
                   </a>
@@ -164,7 +163,7 @@ export default function Contact() {
                     href="https://www.instagram.com/realtoralisafl/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2 bg-light-gray rounded-lg text-xs text-text-light hover:bg-primary hover:text-white transition-all no-underline"
+                    className="flex-1 py-3 bg-white border border-light-gray rounded-xl text-sm text-text-light hover:bg-accent hover:text-white hover:border-accent transition-all no-underline text-center font-medium shadow-sm"
                   >
                     Instagram
                   </a>

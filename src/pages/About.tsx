@@ -43,14 +43,8 @@ export default function About() {
               </div>
             </div>
             <div className="animate-fade-in-up delay-200">
-              {/* Placeholder for Alisa's portrait */}
-              <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-card bg-gradient-to-br from-primary/15 to-accent/15 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="w-40 h-40 rounded-full bg-white/50 mx-auto mb-6 flex items-center justify-center shadow-soft">
-                    <span className="text-6xl font-serif text-primary">A</span>
-                  </div>
-                  <p className="text-text-light text-sm">Portrait photo coming soon</p>
-                </div>
+              <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-card bg-gradient-to-br from-primary/15 to-accent/15">
+                <img src="/images/about-alisa.jpg" alt="Alisa Realtor Portrait" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>

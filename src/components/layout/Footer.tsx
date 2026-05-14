@@ -23,23 +23,38 @@ export default function Footer() {
     <footer className="bg-text text-white">
       {/* Main Footer */}
       <div className="container-custom px-4 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-10">
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-2 no-underline mb-4">
               <Home className="w-6 h-6 text-primary-light" />
-              <span className="font-serif text-2xl font-bold text-white">Alisa</span>
+              <div>
+                <span className="font-serif text-2xl font-bold text-white block leading-none">Alisa</span>
+                <span className="text-[10px] text-primary-light tracking-[0.2em] uppercase font-bold">Realtor</span>
+              </div>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
               Your trusted guide to Ocala and Central Florida real estate. 
               Helping buyers, sellers, and families find their perfect home.
             </p>
             <div className="flex gap-3">
-              <a href="https://www.facebook.com/AlisaBurnsRealtor" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors text-xs font-medium" aria-label="Facebook">
-                F
+              <a 
+                href="https://www.facebook.com/AlisaBurnsRealtor" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-primary hover:border-primary transition-all text-xs font-semibold group" 
+                aria-label="Facebook"
+              >
+                <span className="group-hover:scale-110 transition-transform">FB</span>
               </a>
-              <a href="https://www.instagram.com/realtoralisafl/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors text-xs font-medium" aria-label="Instagram">
-                I
+              <a 
+                href="https://www.instagram.com/realtoralisafl/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-accent hover:border-accent transition-all text-xs font-semibold group" 
+                aria-label="Instagram"
+              >
+                <span className="group-hover:scale-110 transition-transform">IG</span>
               </a>
             </div>
           </div>
