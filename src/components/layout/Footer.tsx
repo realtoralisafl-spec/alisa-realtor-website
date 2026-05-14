@@ -128,13 +128,27 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
-        <div className="container-custom px-4 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-gray-500 text-xs">
-            &copy; {new Date().getFullYear()} Alisa — Licensed Real Estate Agent, Florida. All rights reserved.
-          </p>
-          <p className="text-gray-500 text-xs">
-            Equal Housing Opportunity
-          </p>
+        <div className="container-custom px-4 lg:px-8 py-6">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 text-center sm:text-left">
+              <span className="text-gray-400 text-sm font-medium">Brokered by:</span>
+              <a href="https://www.crownandgloryrealty.com/" target="_blank" rel="noopener noreferrer" className="block bg-white/5 p-3 rounded-xl hover:bg-white/10 transition-colors">
+                <img 
+                  src="https://osiexpress.azureedge.net/images/2025/9/69b8e52f-9269-4bfb-8fa3-694f2ef52233" 
+                  alt="Crown & Glory Realty" 
+                  className="h-10 object-contain drop-shadow-md opacity-90 hover:opacity-100 transition-opacity"
+                />
+              </a>
+            </div>
+            <div className="flex flex-col items-center md:items-end gap-2">
+              <p className="text-gray-500 text-xs text-center md:text-right">
+                &copy; {new Date().getFullYear()} Alisa — Licensed Real Estate Agent, Florida.
+              </p>
+              <p className="text-gray-500 text-xs text-center md:text-right">
+                Equal Housing Opportunity. All rights reserved.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

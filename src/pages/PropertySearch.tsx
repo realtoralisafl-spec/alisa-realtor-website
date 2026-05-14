@@ -241,21 +241,24 @@ export default function PropertySearch() {
 
           {/* CTA at bottom */}
           <div className="mt-12 bg-white rounded-2xl p-8 text-center shadow-soft">
-            <h3 className="font-serif text-xl font-semibold text-text mb-3">
-              Don't See What You're Looking For?
+            <h3 className="font-serif text-2xl font-semibold text-text mb-4">
+              Search the Full Central Florida MLS
             </h3>
-            <p className="text-text-light text-sm mb-6 max-w-lg mx-auto">
-              I have access to the full MLS and can set up custom alerts for new listings 
-              that match your criteria. Let me do the searching for you.
+            <p className="text-text-light text-base mb-8 max-w-2xl mx-auto leading-relaxed">
+              These are just a few of our featured properties. As an agent with Crown & Glory Realty, 
+              I have full access to the entire Multiple Listing Service (MLS). Click below to use our 
+              powerful broker search tool to find exactly what you're looking for.
             </p>
             <div className="flex gap-4 justify-center flex-wrap">
               <a
-                href="tel:3522304020"
-                className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary-dark transition-all no-underline text-sm"
+                href="https://www.crownandgloryrealty.com/search-results"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-xl font-bold hover:bg-primary-dark transition-all no-underline text-base shadow-sm hover:-translate-y-0.5 hover:shadow-md"
               >
-                <Phone className="w-4 h-4" /> Call (352) 230-4020
+                Search All Available Listings <Search className="w-5 h-5 ml-1" />
               </a>
-              <Button to="/contact" variant="outline" size="md">
+              <Button to="/contact" variant="outline" size="lg">
                 Send Me Your Wishlist
               </Button>
             </div>
