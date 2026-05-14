@@ -58,7 +58,7 @@ export default function PropertySearch() {
   }
 
   const selectClass =
-    'bg-white border border-text-muted/50 rounded-xl px-4 py-2.5 text-sm text-text focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary appearance-none cursor-pointer w-full'
+    'bg-white border border-medium-gray rounded-xl px-4 py-2.5 text-sm text-text font-medium focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary appearance-none cursor-pointer w-full shadow-sm hover:border-text-muted transition-colors'
 
   return (
     <>
@@ -77,13 +77,13 @@ export default function PropertySearch() {
           {/* Search Bar */}
           <div className="max-w-2xl mx-auto mb-6">
             <div className="relative">
-              <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-text-muted" />
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-6 h-6 text-text-muted" />
               <input
                 type="text"
                 placeholder="Search by location, address, or keyword..."
                 value={searchText}
                 onChange={(e) => setSearchText(e.target.value)}
-                className="w-full bg-white border border-text-muted/50 rounded-xl pl-12 pr-4 py-3 text-sm text-text placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary"
+                className="w-full bg-white border border-medium-gray rounded-xl pl-12 pr-4 py-3.5 text-sm md:text-base text-text placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary shadow-sm"
               />
               {searchText && (
                 <button
@@ -97,12 +97,12 @@ export default function PropertySearch() {
           </div>
 
           {/* Filter Toggle (Mobile) */}
-          <div className="flex justify-center md:hidden mb-4">
+          <div className="flex justify-center md:hidden mb-6">
             <button
               onClick={() => setShowFilters(!showFilters)}
-              className="flex items-center gap-2 text-sm text-primary font-medium"
+              className="flex items-center justify-center gap-2 text-sm text-text font-semibold bg-white border border-medium-gray px-6 py-3 rounded-xl shadow-sm w-full max-w-[200px] hover:bg-light-gray transition-colors"
             >
-              <SlidersHorizontal className="w-4 h-4" />
+              <SlidersHorizontal className="w-4 h-4 text-primary" />
               {showFilters ? 'Hide Filters' : 'Show Filters'}
             </button>
           </div>
@@ -166,8 +166,8 @@ export default function PropertySearch() {
       {/* Results */}
       <section className="section-padding bg-light-gray pt-8">
         <div className="container-custom px-4 lg:px-8">
-          <p className="text-sm text-text-muted mb-6">
-            {filtered.length} {filtered.length === 1 ? 'property' : 'properties'} found
+          <p className="text-base font-medium text-text mb-6">
+            {filtered.length} {filtered.length === 1 ? 'Property' : 'Properties'} Found
           </p>
 
           {filtered.length === 0 ? (
@@ -202,7 +202,7 @@ export default function PropertySearch() {
                   </div>
 
                   {/* Content */}
-                  <div className="p-5">
+                  <div className="p-6">
                     <p className="text-2xl font-bold text-text mb-1">
                       ${property.price.toLocaleString()}
                     </p>

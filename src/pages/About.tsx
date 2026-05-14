@@ -43,7 +43,7 @@ export default function About() {
               </div>
             </div>
             <div className="animate-fade-in-up delay-200">
-              <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-card bg-gradient-to-br from-primary/15 to-accent/15">
+              <div className="aspect-[3/4] max-h-[500px] lg:max-h-none mx-auto rounded-2xl overflow-hidden shadow-card bg-gradient-to-br from-primary/15 to-accent/15">
                 <img src="/images/about-alisa.jpg" alt="Alisa Realtor Portrait" className="w-full h-full object-cover" />
               </div>
             </div>

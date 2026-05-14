@@ -30,7 +30,7 @@ export default function Footer() {
               <Home className="w-6 h-6 text-primary-light" />
               <div>
                 <span className="font-serif text-2xl font-bold text-white block leading-none">Alisa</span>
-                <span className="text-[10px] text-primary-light tracking-[0.2em] uppercase font-bold">Realtor</span>
+                <span className="text-xs text-primary-light tracking-widest uppercase font-bold mt-0.5 block">Realtor</span>
               </div>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">

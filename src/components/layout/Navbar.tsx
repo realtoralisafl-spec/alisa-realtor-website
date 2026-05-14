@@ -48,7 +48,7 @@ export default function Navbar() {
             }`}>
               Alisa
             </span>
-            <span className={`text-xs ml-2 tracking-widest uppercase font-semibold transition-colors ${
+            <span className={`text-sm ml-2.5 tracking-wider uppercase font-bold transition-colors ${
               !scrolled && isHomePage ? 'text-accent drop-shadow-sm' : 'text-primary'
             }`}>
               Realtor

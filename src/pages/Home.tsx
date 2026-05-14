@@ -45,12 +45,12 @@ export default function Home() {
             <span className="inline-block px-4 py-2 bg-white/15 backdrop-blur-sm rounded-full text-white text-sm font-medium mb-6 animate-fade-in">
               Your Trusted Ocala Real Estate Guide
             </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif font-bold text-white mb-6 animate-fade-in-up leading-tight drop-shadow-lg">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif font-bold text-white mb-8 animate-fade-in-up leading-tight drop-shadow-lg">
               Find Your Perfect
               <br />
               <span className="italic font-normal text-accent drop-shadow-md">Florida Home</span>
             </h1>
-            <p className="text-lg md:text-xl text-white/90 max-w-xl mx-auto mb-10 animate-fade-in-up delay-200 leading-relaxed drop-shadow-sm">
+            <p className="text-lg md:text-xl text-white/90 max-w-xl mx-auto mb-12 mt-6 animate-fade-in-up delay-200 leading-relaxed drop-shadow-sm">
               I'm here to help guide you through every step — whether you're buying your first home, 
               selling, or exploring the Ocala area.
             </p>
@@ -201,7 +201,7 @@ export default function Home() {
                     </div>
                   )}
                 </div>
-                <div className="p-5">
+                <div className="p-6">
                   <p className="text-2xl font-bold text-text mb-1">
                     ${property.price.toLocaleString()}
                   </p>
