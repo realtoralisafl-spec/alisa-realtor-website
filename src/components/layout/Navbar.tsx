@@ -27,10 +27,13 @@ export default function Navbar() {
     setIsOpen(false)
   }, [location])
 
+  const isHomePage = location.pathname === '/'
+  const isSolid = scrolled || !isHomePage
+
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
+        isSolid
           ? 'bg-white/95 backdrop-blur-lg shadow-sm py-3'
           : 'bg-transparent py-5'
       }`}
@@ -43,7 +46,7 @@ export default function Navbar() {
             <span className="font-serif text-2xl font-bold text-text tracking-tight">
               Alisa
             </span>
-            <span className="hidden sm:inline text-xs text-text-muted ml-2 tracking-widest uppercase font-medium">
+            <span className="hidden sm:inline text-xs text-primary ml-2 tracking-widest uppercase font-semibold">
               Realtor
             </span>
           </div>
@@ -58,7 +61,7 @@ export default function Navbar() {
               className={`px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 no-underline ${
                 location.pathname === link.to
                   ? 'text-primary bg-primary/10'
-                  : 'text-text-light hover:text-text hover:bg-light-gray'
+                  : 'text-text font-medium hover:text-primary hover:bg-primary/5'
               }`}
             >
               {link.label}
@@ -109,7 +112,7 @@ export default function Navbar() {
               className={`block px-4 py-3 rounded-lg text-base font-medium transition-all no-underline ${
                 location.pathname === link.to
                   ? 'text-primary bg-primary/10'
-                  : 'text-text-light hover:text-text hover:bg-light-gray'
+                  : 'text-text font-medium hover:text-primary hover:bg-primary/5'
               }`}
             >
               {link.label}

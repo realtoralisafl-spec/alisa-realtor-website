@@ -21,7 +21,7 @@ export default function Sellers() {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-40 pb-20 bg-gradient-to-br from-accent/5 via-warm-white to-primary/5">
+      <section className="relative pt-16 pb-20 bg-gradient-to-br from-accent/5 via-warm-white to-primary/5">
         <div className="container-custom px-4 lg:px-8">
           <div className="max-w-3xl mx-auto text-center animate-fade-in-up">
             <div className="accent-line mx-auto mb-6" />

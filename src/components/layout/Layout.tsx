@@ -16,11 +16,16 @@ interface LayoutProps {
 }
 
 export default function Layout({ children }: LayoutProps) {
+  const location = useLocation()
+  const isHomePage = location.pathname === '/'
+
   return (
     <div className="min-h-screen flex flex-col">
       <ScrollToTop />
       <Navbar />
-      <main className="flex-1">{children}</main>
+      <main className={`flex-1 ${!isHomePage ? 'pt-20 lg:pt-24' : ''}`}>
+        {children}
+      </main>
       <Footer />
     </div>
   )

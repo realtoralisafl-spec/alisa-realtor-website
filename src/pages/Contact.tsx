@@ -61,7 +61,7 @@ export default function Contact() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-40 pb-16 bg-gradient-to-br from-primary/5 via-warm-white to-accent/5">
+      <section className="pt-16 pb-16 bg-gradient-to-br from-primary/5 via-warm-white to-accent/5">
         <div className="container-custom px-4 lg:px-8 text-center">
           <div className="accent-line mx-auto mb-6" />
           <h1 className="text-4xl md:text-5xl font-serif font-semibold text-text mb-4">

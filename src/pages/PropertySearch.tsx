@@ -63,7 +63,7 @@ export default function PropertySearch() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-36 pb-8 bg-warm-white">
+      <section className="pt-12 pb-8 bg-warm-white">
         <div className="container-custom px-4 lg:px-8">
           <div className="text-center mb-8">
             <h1 className="text-3xl md:text-4xl font-serif font-semibold text-text mb-3">
