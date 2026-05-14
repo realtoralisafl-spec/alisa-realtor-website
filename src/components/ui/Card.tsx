@@ -26,7 +26,7 @@ export default function Card({ image, title, description, to, icon, className = 
       )}
       <div className="p-6">
         {icon && (
-          <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 text-primary">
+          <div className="w-12 h-12 rounded-xl bg-primary/15 flex items-center justify-center mb-5 text-primary shadow-sm group-hover:scale-110 group-hover:bg-primary group-hover:text-white transition-all duration-300">
             {icon}
           </div>
         )}

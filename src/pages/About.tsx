@@ -12,7 +12,7 @@ export default function About() {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-32 pb-20 bg-gradient-to-br from-warm-white to-light-gray overflow-hidden">
+      <section className="relative pt-40 pb-20 bg-gradient-to-br from-warm-white to-light-gray overflow-hidden">
         <div className="container-custom px-4 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in-up">

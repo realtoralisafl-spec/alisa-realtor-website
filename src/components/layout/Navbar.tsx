@@ -3,7 +3,6 @@ import { Link, useLocation } from 'react-router-dom'
 import { Menu, X, Phone, Home } from 'lucide-react'
 
 const navLinks = [
-  { to: '/', label: 'Home' },
   { to: '/about', label: 'About' },
   { to: '/buyers', label: 'Buy' },
   { to: '/sellers', label: 'Sell' },
@@ -44,7 +43,7 @@ export default function Navbar() {
             <span className="font-serif text-2xl font-bold text-text tracking-tight">
               Alisa
             </span>
-            <span className="hidden sm:inline text-xs text-text-light ml-2 tracking-widest uppercase">
+            <span className="hidden sm:inline text-xs text-text-muted ml-2 tracking-widest uppercase font-medium">
               Realtor
             </span>
           </div>

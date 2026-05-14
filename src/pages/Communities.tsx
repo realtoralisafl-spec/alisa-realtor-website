@@ -16,7 +16,7 @@ export default function Communities() {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-32 pb-20 bg-gradient-to-br from-primary/5 via-warm-white to-accent/5">
+      <section className="relative pt-40 pb-20 bg-gradient-to-br from-primary/5 via-warm-white to-accent/5">
         <div className="container-custom px-4 lg:px-8">
           <div className="max-w-3xl mx-auto text-center animate-fade-in-up">
             <div className="accent-line mx-auto mb-6" />

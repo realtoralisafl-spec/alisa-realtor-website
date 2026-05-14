@@ -58,7 +58,7 @@ export default function Home() {
               <Button to="/properties" variant="white" size="lg">
                 <Search className="w-4 h-4 mr-2" /> Search Properties
               </Button>
-              <Button to="/contact" variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-text">
+              <Button to="/contact" variant="outline" size="lg" className="border-white text-white bg-black/20 backdrop-blur-sm hover:bg-white hover:text-text">
                 Schedule Consultation
               </Button>
             </div>
@@ -199,11 +199,11 @@ export default function Home() {
                   <div className="absolute inset-0 flex items-center justify-center text-text-muted">
                     <HomeIcon className="w-12 h-12 opacity-30" />
                   </div>
-                  <div className="absolute top-3 left-3 bg-primary text-white text-xs font-semibold px-3 py-1 rounded-full">
+                  <div className="absolute top-3 left-3 bg-primary-dark shadow-sm text-white text-xs font-semibold px-3 py-1 rounded-full">
                     {property.status}
                   </div>
                   {property.type === 'New Construction' && (
-                    <div className="absolute top-3 right-3 bg-accent text-white text-xs font-semibold px-3 py-1 rounded-full">
+                    <div className="absolute top-3 right-3 bg-accent-dark shadow-sm text-white text-xs font-semibold px-3 py-1 rounded-full">
                       New Build
                     </div>
                   )}

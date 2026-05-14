@@ -35,17 +35,12 @@ export default function Footer() {
               Helping buyers, sellers, and families find their perfect home.
             </p>
             <div className="flex gap-3">
-              {/* Placeholder social links - replace # with actual URLs */}
-              {['Facebook', 'Instagram', 'YouTube'].map((platform) => (
-                <a
-                  key={platform}
-                  href="#"
-                  className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors text-xs font-medium"
-                  aria-label={platform}
-                >
-                  {platform[0]}
-                </a>
-              ))}
+              <a href="https://www.facebook.com/AlisaBurnsRealtor" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors text-xs font-medium" aria-label="Facebook">
+                F
+              </a>
+              <a href="https://www.instagram.com/realtoralisafl/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors text-xs font-medium" aria-label="Instagram">
+                I
+              </a>
             </div>
           </div>
 

@@ -15,6 +15,8 @@ export default function Contact() {
     message: '',
   })
   const [submitted, setSubmitted] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [error, setError] = useState('')
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
@@ -22,20 +24,44 @@ export default function Contact() {
     setFormData({ ...formData, [e.target.name]: e.target.value })
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Web3Forms integration will go here
-    // For now, just show success state
-    setSubmitted(true)
+    setIsSubmitting(true)
+    setError('')
+    
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json'
+        },
+        body: JSON.stringify({
+          access_key: '6219396c-c475-46e7-bc88-3df335042d60',
+          ...formData
+        })
+      })
+      
+      const result = await response.json()
+      if (result.success) {
+        setSubmitted(true)
+      } else {
+        setError(result.message || 'Something went wrong. Please try again.')
+      }
+    } catch (err) {
+      setError('Network error. Please try again later.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const inputClass =
-    'w-full bg-white border border-medium-gray rounded-xl px-4 py-3 text-sm text-text placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all'
+    'w-full bg-white border border-text-muted/50 rounded-xl px-4 py-3 text-sm text-text placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all'
 
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 pb-16 bg-gradient-to-br from-primary/5 via-warm-white to-accent/5">
+      <section className="pt-40 pb-16 bg-gradient-to-br from-primary/5 via-warm-white to-accent/5">
         <div className="container-custom px-4 lg:px-8 text-center">
           <div className="accent-line mx-auto mb-6" />
           <h1 className="text-4xl md:text-5xl font-serif font-semibold text-text mb-4">
@@ -126,15 +152,22 @@ export default function Contact() {
               <div>
                 <p className="text-xs text-text-muted uppercase tracking-wider mb-3">Follow Along</p>
                 <div className="flex gap-3">
-                  {['Facebook', 'Instagram', 'YouTube'].map((platform) => (
-                    <a
-                      key={platform}
-                      href="#"
-                      className="px-4 py-2 bg-light-gray rounded-lg text-xs text-text-light hover:bg-primary hover:text-white transition-all no-underline"
-                    >
-                      {platform}
-                    </a>
-                  ))}
+                  <a
+                    href="https://www.facebook.com/AlisaBurnsRealtor"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 bg-light-gray rounded-lg text-xs text-text-light hover:bg-primary hover:text-white transition-all no-underline"
+                  >
+                    Facebook
+                  </a>
+                  <a
+                    href="https://www.instagram.com/realtoralisafl/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 bg-light-gray rounded-lg text-xs text-text-light hover:bg-primary hover:text-white transition-all no-underline"
+                  >
+                    Instagram
+                  </a>
                 </div>
               </div>
             </div>
@@ -177,8 +210,11 @@ export default function Contact() {
                       </h3>
                     </div>
                     <form onSubmit={handleSubmit} className="space-y-5">
-                      {/* Web3Forms access key will go here */}
-                      {/* <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY" /> */}
+                      {error && (
+                        <div className="bg-red-50 text-red-600 p-3 rounded-lg text-sm mb-4 border border-red-100">
+                          {error}
+                        </div>
+                      )}
 
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
@@ -266,9 +302,12 @@ export default function Contact() {
 
                       <button
                         type="submit"
-                        className="w-full bg-primary text-white py-3 rounded-xl font-semibold hover:bg-primary-dark transition-all duration-200 flex items-center justify-center gap-2"
+                        disabled={isSubmitting}
+                        className={`w-full bg-primary text-white py-3 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center gap-2 ${
+                          isSubmitting ? 'opacity-70 cursor-not-allowed' : 'hover:bg-primary-dark'
+                        }`}
                       >
-                        <Send className="w-4 h-4" /> Send Message
+                        <Send className="w-4 h-4" /> {isSubmitting ? 'Sending...' : 'Send Message'}
                       </button>
 
                       <p className="text-xs text-text-muted text-center">

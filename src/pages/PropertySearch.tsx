@@ -58,12 +58,12 @@ export default function PropertySearch() {
   }
 
   const selectClass =
-    'bg-white border border-medium-gray rounded-xl px-4 py-2.5 text-sm text-text focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary appearance-none cursor-pointer w-full'
+    'bg-white border border-text-muted/50 rounded-xl px-4 py-2.5 text-sm text-text focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary appearance-none cursor-pointer w-full'
 
   return (
     <>
       {/* Hero */}
-      <section className="pt-28 pb-8 bg-warm-white">
+      <section className="pt-36 pb-8 bg-warm-white">
         <div className="container-custom px-4 lg:px-8">
           <div className="text-center mb-8">
             <h1 className="text-3xl md:text-4xl font-serif font-semibold text-text mb-3">
@@ -83,7 +83,7 @@ export default function PropertySearch() {
                 placeholder="Search by location, address, or keyword..."
                 value={searchText}
                 onChange={(e) => setSearchText(e.target.value)}
-                className="w-full bg-white border border-medium-gray rounded-xl pl-12 pr-4 py-3 text-sm text-text placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary"
+                className="w-full bg-white border border-text-muted/50 rounded-xl pl-12 pr-4 py-3 text-sm text-text placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary"
               />
               {searchText && (
                 <button
@@ -194,12 +194,12 @@ export default function PropertySearch() {
                       <Home className="w-12 h-12 opacity-20" />
                     </div>
                     <div className="absolute top-3 left-3 flex gap-2">
-                      <span className="bg-primary text-white text-xs font-semibold px-3 py-1 rounded-full">
+                      <span className="bg-primary-dark shadow-sm text-white text-xs font-semibold px-3 py-1 rounded-full">
                         {property.status}
                       </span>
                     </div>
                     <div className="absolute top-3 right-3">
-                      <span className="bg-white/90 backdrop-blur-sm text-text text-xs font-medium px-3 py-1 rounded-full">
+                      <span className="bg-white/95 shadow-sm backdrop-blur-sm text-text text-xs font-medium px-3 py-1 rounded-full">
                         {property.type}
                       </span>
                     </div>
