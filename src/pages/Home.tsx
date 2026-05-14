@@ -22,7 +22,7 @@ import { properties } from '../data/properties'
 
 export default function Home() {
   useEffect(() => {
-    document.title = 'Alisa | Ocala FL Realtor — Homes for Sale in Marion County'
+    document.title = 'Alisa | Ocala FL Realtor | Homes for Sale in Marion County'
   }, [])
 
   const featuredProperties = properties.filter((p) => p.featured).slice(0, 3)
@@ -51,7 +51,7 @@ export default function Home() {
               <span className="italic font-normal text-accent drop-shadow-md">Florida Home</span>
             </h1>
             <p className="text-lg md:text-xl text-white/90 max-w-xl mx-auto mb-12 mt-6 animate-fade-in-up delay-200 leading-relaxed drop-shadow-sm">
-              I'm here to help guide you through every step — whether you're buying your first home, 
+              I'm here to help guide you through every step, whether you're buying your first home, 
               selling, or exploring the Ocala area.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up delay-300">
@@ -138,7 +138,7 @@ export default function Home() {
                   {
                     icon: <MapPin className="w-5 h-5" />,
                     title: 'Local Market Expert',
-                    desc: 'I know Ocala and the surrounding communities inside and out — from horse country to 55+ living.',
+                    desc: 'I know Ocala and the surrounding communities inside and out: from horse country to 55+ living.',
                   },
                   {
                     icon: <Heart className="w-5 h-5" />,
@@ -148,7 +148,7 @@ export default function Home() {
                   {
                     icon: <Shield className="w-5 h-5" />,
                     title: 'Honest Guidance',
-                    desc: "I'll always give you my honest opinion — even if it means steering you away from a property that isn't right.",
+                    desc: "I'll always give you my honest opinion, even if it means steering you away from a property that isn't right.",
                   },
                   {
                     icon: <Star className="w-5 h-5" />,

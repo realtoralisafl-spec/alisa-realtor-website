@@ -32,7 +32,7 @@ export default function Sellers() {
             </h1>
             <p className="text-lg text-text-light leading-relaxed mb-8">
               Your home is one of your biggest investments. I'll make sure it gets the attention, 
-              marketing, and negotiation strategy it deserves — so you get the best possible result.
+              marketing, and negotiation strategy it deserves so you get the best possible result.
             </p>
             <div className="flex gap-4 justify-center">
               <Button to="/contact" variant="primary" size="lg">
@@ -48,14 +48,14 @@ export default function Sellers() {
         <div className="container-custom">
           <SectionHeading
             title="My Approach to Selling"
-            subtitle="Selling your home isn't just about listing it — it's about creating a strategy that gets results."
+            subtitle="Selling your home isn't just about listing it. It's about creating a strategy that gets results."
           />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
                 icon: <BarChart3 className="w-6 h-6" />,
                 title: 'Strategic Pricing',
-                desc: "I use up-to-date market data and local comps to price your home right — attracting buyers without leaving money on the table.",
+                desc: "I use up-to-date market data and local comps to price your home right, attracting buyers without leaving money on the table.",
               },
               {
                 icon: <Camera className="w-6 h-6" />,
@@ -65,7 +65,7 @@ export default function Sellers() {
               {
                 icon: <Megaphone className="w-6 h-6" />,
                 title: 'Maximum Exposure',
-                desc: 'MLS, social media, video tours, open houses, and targeted digital campaigns — your listing reaches the right buyers.',
+                desc: 'MLS, social media, video tours, open houses, and targeted digital campaigns ensure your listing reaches the right buyers.',
               },
               {
                 icon: <Handshake className="w-6 h-6" />,
@@ -117,7 +117,7 @@ export default function Sellers() {
                   {
                     icon: <CheckCircle className="w-5 h-5" />,
                     title: 'Full-Service Support',
-                    desc: 'From initial consultation through closing day, I handle the details — inspections, appraisals, repairs negotiations, and paperwork — so you can focus on your next chapter.',
+                    desc: 'From initial consultation through closing day, I handle the details: inspections, appraisals, repairs negotiations, and paperwork, so you can focus on your next chapter.',
                   },
                 ].map((item) => (
                   <div key={item.title} className="flex gap-4 items-start">

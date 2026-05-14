@@ -83,7 +83,7 @@ export default function Contact() {
               <h2 className="font-serif text-2xl font-semibold text-text mb-6">Get in Touch</h2>
               <p className="text-text-light mb-8 leading-relaxed">
                 Have a question about buying, selling, or the Ocala market? 
-                I'm here to help — reach out anytime.
+                I'm here to help, reach out anytime.
               </p>
 
               <div className="space-y-6 mb-10">

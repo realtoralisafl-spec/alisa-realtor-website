@@ -33,7 +33,7 @@ export default function NewConstruction() {
             </h1>
             <p className="text-lg text-text-light leading-relaxed mb-8">
               There's something special about being the first to live in a brand-new home. 
-              But the process is different from buying resale — and that's where having an 
+              But the process is different from buying resale, and that's where having an 
               experienced agent on your side really matters.
             </p>
             <Button to="/contact" variant="primary" size="lg">
@@ -48,7 +48,7 @@ export default function NewConstruction() {
         <div className="container-custom">
           <SectionHeading
             title="Why Consider New Construction?"
-            subtitle="Building new offers unique advantages — here's what you can expect."
+            subtitle="Building new offers unique advantages: here's what you can expect."
           />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
@@ -60,12 +60,12 @@ export default function NewConstruction() {
               {
                 icon: <Shield className="w-6 h-6" />,
                 title: 'Builder Warranties',
-                desc: "New homes come with warranties covering structural issues, systems, and sometimes even appliances — giving you peace of mind from day one.",
+                desc: "New homes come with warranties covering structural issues, systems, and sometimes even appliances, giving you peace of mind from day one.",
               },
               {
                 icon: <DollarSign className="w-6 h-6" />,
                 title: 'Builder Incentives',
-                desc: "Builders often offer closing cost assistance, rate buydowns, or free upgrades — especially when you work with an agent who knows how to ask.",
+                desc: "Builders often offer closing cost assistance, rate buydowns, or free upgrades, especially when you work with an agent who knows how to ask.",
               },
               {
                 icon: <Lightbulb className="w-6 h-6" />,
@@ -102,7 +102,7 @@ export default function NewConstruction() {
       <section className="section-padding bg-warm-white">
         <div className="container-custom">
           <SectionHeading
-            title="New vs. Existing — An Honest Look"
+            title="New vs. Existing: An Honest Look"
             subtitle="I want you to make an informed decision, so here's the full picture."
           />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -113,7 +113,7 @@ export default function NewConstruction() {
               </div>
               <ul className="space-y-3">
                 {[
-                  'Everything is brand new — no surprises',
+                  'Everything is brand new, with no surprises',
                   'Customize finishes and features',
                   'Energy-efficient construction',
                   'Builder warranties included',
@@ -160,13 +160,13 @@ export default function NewConstruction() {
           <div className="max-w-3xl mx-auto">
             <SectionHeading
               title="Why You Need Your Own Agent"
-              subtitle="The model home sales agent works for the builder — not for you."
+              subtitle="The model home sales agent works for the builder, not for you."
             />
             <div className="bg-primary/5 rounded-2xl p-8 md:p-10 border border-primary/10">
               <p className="text-text-light leading-relaxed mb-6">
                 When you visit a builder's sales office, the agent there represents the builder's 
-                interests. Having your own buyer's agent (like me!) costs you nothing extra — the 
-                builder pays my commission — but it gives you:
+                interests. Having your own buyer's agent (like me!) costs you nothing extra: the 
+                builder pays my commission, but it gives you:
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                 {[
@@ -189,7 +189,7 @@ export default function NewConstruction() {
                 "A lot of buyers don't realize they can bring their own agent to a new construction purchase. 
                 It's free for you, and it means you have someone in your corner throughout the entire build process."
               </p>
-              <p className="text-sm font-medium text-primary">— Alisa</p>
+              <p className="text-sm font-medium text-primary">- Alisa</p>
             </div>
           </div>
         </div>

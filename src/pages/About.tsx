@@ -29,12 +29,12 @@ export default function About() {
               </p>
               <p className="text-lg text-text-light leading-relaxed mb-4">
                 Whether you're a first-time buyer nervous about the process, a family relocating to 
-                Florida, or a retiree exploring 55+ communities — I'm here to make the journey feel 
+                Florida, or a retiree exploring 55+ communities, I'm here to make the journey feel 
                 smooth, clear, and even a little fun.
               </p>
               <p className="text-lg text-text-light leading-relaxed mb-8">
                 I believe in honest communication, personalized attention, and making sure you feel 
-                confident in every decision. No pushy sales tactics, no corporate scripts — just 
+                confident in every decision. No pushy sales tactics, no corporate scripts, just 
                 real guidance from someone who knows this area and cares about getting it right for you.
               </p>
               <div className="flex gap-4">
@@ -68,12 +68,12 @@ export default function About() {
               {
                 icon: <MapPin className="w-6 h-6" />,
                 title: 'Local Expertise',
-                desc: 'From Ocala horse country to the 55+ communities in Summerfield, I know these neighborhoods — the schools, the commutes, the hidden gems.',
+                desc: 'From Ocala horse country to the 55+ communities in Summerfield, I know these neighborhoods: the schools, the commutes, the hidden gems.',
               },
               {
                 icon: <Handshake className="w-6 h-6" />,
                 title: 'Honest Communication',
-                desc: "I'll always give you my straightforward opinion. If something doesn't feel right about a property or a deal, I'll tell you — every time.",
+                desc: "I'll always give you my straightforward opinion. If something doesn't feel right about a property or a deal, I'll tell you without hesitation.",
               },
               {
                 icon: <Award className="w-6 h-6" />,
@@ -83,7 +83,7 @@ export default function About() {
               {
                 icon: <Users className="w-6 h-6" />,
                 title: 'Your Advocate',
-                desc: "From the offer to the inspection to the closing table, I'm in your corner — negotiating, problem-solving, and making sure your interests are protected.",
+                desc: "From the offer to the inspection to the closing table, I'm in your corner, negotiating, problem-solving, and making sure your interests are protected.",
               },
               {
                 icon: <Coffee className="w-6 h-6" />,
@@ -140,7 +140,7 @@ export default function About() {
 
       <CTABanner
         title="Let's Find the Right Home for You"
-        subtitle="Whether you're buying, selling, or just exploring — I'd love to hear from you."
+        subtitle="Whether you're buying, selling, or just exploring, I'd love to hear from you."
         buttonText="Get in Touch"
         buttonTo="/contact"
       />

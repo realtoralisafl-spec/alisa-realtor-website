@@ -43,7 +43,7 @@ const steps = [
   {
     icon: <Key className="w-6 h-6" />,
     title: 'Close & Get Your Keys',
-    desc: "We'll do a final walkthrough, go through closing paperwork, and then — you get the keys to your new home!",
+    desc: "We'll do a final walkthrough, go through closing paperwork, and then you get the keys to your new home!",
   },
 ]
 
@@ -121,7 +121,7 @@ export default function Buyers() {
             <div>
               <SectionHeading
                 title="First-Time Homebuyer?"
-                subtitle="Don't worry — everyone starts somewhere, and I love working with first-time buyers."
+                subtitle="Don't worry, everyone starts somewhere, and I love working with first-time buyers."
                 centered={false}
               />
               <div className="space-y-4 mb-8">
@@ -162,10 +162,10 @@ export default function Buyers() {
               </h3>
               <p className="text-text-light leading-relaxed mb-6">
                 I remember how confusing things can feel when you're just getting started. That's 
-                why I take a patient, educational approach — answering every question, explaining 
+                why I take a patient, educational approach: answering every question, explaining 
                 every document, and celebrating every milestone with you.
               </p>
-              <p className="text-sm text-primary font-medium">— Alisa</p>
+              <p className="text-sm text-primary font-medium">- Alisa</p>
             </div>
           </div>
         </div>
@@ -181,7 +181,7 @@ export default function Buyers() {
                 Considering New Construction?
               </h3>
               <p className="text-text-light mb-4">
-                Building new has its own set of considerations — from choosing a builder to comparing 
+                Building new has its own set of considerations, from choosing a builder to comparing 
                 upgrades to understanding contracts. I have experience guiding buyers through the 
                 new construction process.
               </p>

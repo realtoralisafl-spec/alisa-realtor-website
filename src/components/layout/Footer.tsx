@@ -142,7 +142,7 @@ export default function Footer() {
             </div>
             <div className="flex flex-col items-center md:items-end gap-2">
               <p className="text-gray-500 text-xs text-center md:text-right">
-                &copy; {new Date().getFullYear()} Alisa — Licensed Real Estate Agent, Florida.
+                &copy; {new Date().getFullYear()} Alisa | Licensed Real Estate Agent, Florida.
               </p>
               <p className="text-gray-500 text-xs text-center md:text-right">
                 Equal Housing Opportunity. All rights reserved.
