@@ -48,11 +48,8 @@ export default function Communities() {
                 }`}
               >
                 <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
-                  <div className="aspect-[16/10] rounded-2xl overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center shadow-soft">
-                    <div className="text-center p-8">
-                      <MapPin className="w-12 h-12 text-primary/40 mx-auto mb-2" />
-                      <p className="text-text-muted text-sm">{community.name} area photo</p>
-                    </div>
+                  <div className="aspect-[16/10] rounded-2xl overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10 shadow-soft">
+                    <img src={community.image} alt={community.name} className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                   </div>
                 </div>
                 <div className={index % 2 === 1 ? 'lg:order-1' : ''}>

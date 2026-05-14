@@ -191,9 +191,7 @@ export default function Home() {
                 className="group bg-white rounded-2xl overflow-hidden shadow-soft hover:shadow-hover transition-all duration-300 hover:-translate-y-1"
               >
                 <div className="relative aspect-[16/10] overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10">
-                  <div className="absolute inset-0 flex items-center justify-center text-text-muted">
-                    <HomeIcon className="w-12 h-12 opacity-30" />
-                  </div>
+                  <img src={property.image} alt={property.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                   <div className="absolute top-3 left-3 bg-primary-dark shadow-sm text-white text-xs font-semibold px-3 py-1 rounded-full">
                     {property.status}
                   </div>
@@ -243,8 +241,8 @@ export default function Home() {
                 to="/communities"
                 className="group relative aspect-[4/3] rounded-2xl overflow-hidden shadow-soft no-underline"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-accent/20" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                <img src={community.image} alt={community.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <h3 className="font-serif text-2xl font-semibold text-white mb-1">
                     {community.name}
