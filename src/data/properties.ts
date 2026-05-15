@@ -18,7 +18,7 @@ export interface Property {
 export const properties: Property[] = [
   {
     id: 1,
-    title: 'Spacious Family Home in Ocala',
+    title: '4BR Family Home in Marion Oaks',
     address: '8356 SW 59th Terrace',
     city: 'Ocala',
     price: 399900,
@@ -30,11 +30,11 @@ export const properties: Property[] = [
     image: '/images/property-1.jpg',
     featured: true,
     yearBuilt: 2015,
-    description: 'Beautiful and spacious 4-bedroom home in a highly desirable Ocala neighborhood. Features an open floor plan, large living areas, and a beautiful master suite.',
+    description: 'Beautiful 4-bedroom home in the heart of Marion Oaks. Features an open-concept floor plan, oversized living areas, and a private master suite with tray ceilings.',
   },
   {
     id: 2,
-    title: 'Charming Ocala Starter Home',
+    title: 'Turn-key 3BR Near Downtown Ocala',
     address: '4515 SE 59th Street',
     city: 'Ocala',
     price: 270000,
@@ -46,11 +46,11 @@ export const properties: Property[] = [
     image: '/images/property-2.jpeg',
     featured: true,
     yearBuilt: 2005,
-    description: 'A wonderfully maintained 3-bedroom home perfect for first-time buyers or those looking to downsize. Offers a comfortable layout and a cozy backyard.',
+    description: 'A well-maintained starter home or investment property just minutes from downtown shopping and dining. Includes a fenced backyard and updated flooring.',
   },
   {
     id: 3,
-    title: 'Elegant Tavares Residence',
+    title: 'Luxury 5BR with Gourmet Kitchen',
     address: '5128 Grassy Knoll Drive',
     city: 'Tavares',
     price: 425000,
@@ -62,11 +62,11 @@ export const properties: Property[] = [
     image: '/images/property-3.jpg',
     featured: true,
     yearBuilt: 2018,
-    description: 'Stunning 5-bedroom home located in the beautiful city of Tavares. Boasting almost 3,000 square feet of living space, this home features high-end finishes and a massive kitchen.',
+    description: 'Stunning 5-bedroom residence in Tavares. Boasting almost 3,000 square feet, this home features a gourmet kitchen, high-end stone counters, and a massive loft space.',
   },
   {
     id: 4,
-    title: 'Prime 19 Acre Property in Citra',
+    title: '19-Acre Equestrian Parcel in Citra',
     address: '000 NW 27th Avenue',
     city: 'Citra',
     price: 665000,
@@ -78,7 +78,7 @@ export const properties: Property[] = [
     image: '/images/property-4.webp',
     featured: true,
     yearBuilt: 0,
-    description: 'Incredible opportunity to own 19.00 acres of prime Florida land in Citra. Perfect for building your dream equestrian estate or private retreat.',
+    description: 'Incredible opportunity to own 19 acres of prime equestrian land in Citra. Perfect for a custom horse farm or private estate in the heart of Florida horse country.',
   },
 ]
 

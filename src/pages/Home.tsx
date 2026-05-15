@@ -67,10 +67,10 @@ export default function Home() {
           {/* Quick Stats */}
           <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto animate-fade-in-up delay-400">
             {[
-              { label: 'Years Experience', value: '10+' },
-              { label: 'Homes Sold', value: '200+' },
-              { label: 'Areas Served', value: '6+' },
-              { label: 'Happy Clients', value: '300+' },
+              { label: 'Years Experience', value: '8+' },
+              { label: 'Homes Sold', value: '140+' },
+              { label: 'Areas Served', value: '5+' },
+              { label: 'Happy Clients', value: '250+' },
             ].map((stat) => (
               <div key={stat.label} className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
                 <p className="text-2xl md:text-3xl font-bold text-white">{stat.value}</p>

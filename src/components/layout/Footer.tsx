@@ -42,8 +42,8 @@ export default function Footer() {
                 href="https://www.facebook.com/AlisaBurnsRealtor" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-primary hover:border-primary transition-all text-xs font-semibold group" 
                 aria-label="Facebook"
+                className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-primary hover:border-primary transition-all text-xs font-semibold group" 
               >
                 <span className="group-hover:scale-110 transition-transform">FB</span>
               </a>
@@ -51,8 +51,8 @@ export default function Footer() {
                 href="https://www.instagram.com/realtoralisafl/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-accent hover:border-accent transition-all text-xs font-semibold group" 
                 aria-label="Instagram"
+                className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-accent hover:border-accent transition-all text-xs font-semibold group" 
               >
                 <span className="group-hover:scale-110 transition-transform">IG</span>
               </a>

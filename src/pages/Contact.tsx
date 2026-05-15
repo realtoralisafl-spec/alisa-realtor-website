@@ -155,6 +155,7 @@ export default function Contact() {
                     href="https://www.facebook.com/AlisaBurnsRealtor"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="Visit Alisa on Facebook"
                     className="flex-1 py-3 bg-white border border-light-gray rounded-xl text-sm text-text-light hover:bg-primary hover:text-white hover:border-primary transition-all no-underline text-center font-medium shadow-sm"
                   >
                     Facebook
@@ -163,6 +164,7 @@ export default function Contact() {
                     href="https://www.instagram.com/realtoralisafl/"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="Visit Alisa on Instagram"
                     className="flex-1 py-3 bg-white border border-light-gray rounded-xl text-sm text-text-light hover:bg-accent hover:text-white hover:border-accent transition-all no-underline text-center font-medium shadow-sm"
                   >
                     Instagram
