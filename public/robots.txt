@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://alisa-realtor.vercel.app/sitemap.xml
+Sitemap: https://alisarealtor.vercel.app/sitemap.xml
