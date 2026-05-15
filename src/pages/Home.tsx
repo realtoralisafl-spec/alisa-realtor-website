@@ -43,16 +43,16 @@ export default function Home() {
         <div className="relative z-20 container-custom px-6 lg:px-8 text-center pt-28 pb-12">
           <div className="max-w-3xl mx-auto">
             <span className="inline-block px-4 py-2 bg-white/15 backdrop-blur-sm rounded-full text-white text-sm font-medium mb-6 animate-fade-in">
-              Your Trusted Ocala Real Estate Guide
+              Ocala & Marion County Real Estate
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif font-bold text-white mb-8 animate-fade-in-up leading-tight drop-shadow-lg">
-              Find Your Perfect
+              Your Local Guide to
               <br />
-              <span className="italic font-normal text-accent drop-shadow-md">Florida Home</span>
+              <span className="italic font-normal text-accent drop-shadow-md">Central Florida Living</span>
             </h1>
             <p className="text-lg md:text-xl text-white/90 max-w-xl mx-auto mb-12 mt-6 animate-fade-in-up delay-200 leading-relaxed drop-shadow-sm">
-              I'm here to help guide you through every step, whether you're buying your first home, 
-              selling, or exploring the Ocala area.
+              I provide personal, straightforward guidance for every step of your journey, whether you're buying your first home, 
+              selling for the best value, or just starting to explore Ocala.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up delay-300">
               <Button to="/properties" variant="white" size="lg">
@@ -138,12 +138,12 @@ export default function Home() {
                   {
                     icon: <MapPin className="w-5 h-5" />,
                     title: 'Local Market Expert',
-                    desc: 'I know Ocala and the surrounding communities inside and out: from horse country to 55+ living.',
+                    desc: "I live and work in Ocala, so I know these neighborhoods inside and out—from the horse country vibes to the best 55+ communities.",
                   },
                   {
                     icon: <Heart className="w-5 h-5" />,
-                    title: 'Genuinely Caring',
-                    desc: "Your goals are my priority. I listen first, then create a strategy that fits your timeline and budget.",
+                    title: 'Personalized Service',
+                    desc: "I'm not a big corporate team. When you work with me, you get me. I'll listen to what you actually need and move at your pace.",
                   },
                   {
                     icon: <Shield className="w-5 h-5" />,

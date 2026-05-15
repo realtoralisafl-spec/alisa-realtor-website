@@ -121,7 +121,7 @@ export default function Buyers() {
             <div>
               <SectionHeading
                 title="First-Time Homebuyer?"
-                subtitle="Don't worry, everyone starts somewhere, and I love working with first-time buyers."
+                subtitle="It's a big step, and I'm here to make sure you're comfortable every step of the way."
                 centered={false}
               />
               <div className="space-y-4 mb-8">
@@ -161,9 +161,7 @@ export default function Buyers() {
                 "Real estate should feel exciting, not overwhelming."
               </h3>
               <p className="text-text-light leading-relaxed mb-6">
-                I remember how confusing things can feel when you're just getting started. That's 
-                why I take a patient, educational approach: answering every question, explaining 
-                every document, and celebrating every milestone with you.
+                I remember how it felt to buy my first home—exciting but a little intimidating. I take an educational approach so you're never in the dark about what you're signing or what comes next.
               </p>
               <p className="text-sm text-primary font-medium">- Alisa</p>
             </div>

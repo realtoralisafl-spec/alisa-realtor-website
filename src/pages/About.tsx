@@ -33,9 +33,7 @@ export default function About() {
                 smooth, clear, and even a little fun.
               </p>
               <p className="text-lg text-text-light leading-relaxed mb-8">
-                I believe in honest communication, personalized attention, and making sure you feel 
-                confident in every decision. No pushy sales tactics, no corporate scripts, just 
-                real guidance from someone who knows this area and cares about getting it right for you.
+                I'm a big believer in straightforward talk. No pushy sales tactics or corporate scripts, just real advice from someone who actually lives here and wants to see you succeed.
               </p>
               <div className="flex gap-4">
                 <Button to="/contact" variant="primary">Let's Connect</Button>
@@ -55,8 +53,8 @@ export default function About() {
       <section className="section-padding bg-white">
         <div className="container-custom">
           <SectionHeading
-            title="What You Can Expect"
-            subtitle="Working with me means having a partner who puts your needs first."
+            title="What to Expect When We Work Together"
+            subtitle="I focus on being more than just your agent—I'm your advocate and your local guide."
           />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
@@ -87,8 +85,8 @@ export default function About() {
               },
               {
                 icon: <Coffee className="w-6 h-6" />,
-                title: 'Approachable & Available',
-                desc: "Have a question at 8pm? That's okay. I believe in being accessible and responsive because buying or selling a home doesn't just happen during business hours.",
+                title: 'Accessible & Responsive',
+                desc: "Real estate doesn't just happen 9-to-5. If you have a question late on a Tuesday or early on a Saturday, I'm here. I make it a point to be available when you need me most.",
               },
             ].map((item) => (
               <div

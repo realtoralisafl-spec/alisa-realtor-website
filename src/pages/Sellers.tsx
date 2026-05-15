@@ -47,8 +47,8 @@ export default function Sellers() {
       <section className="section-padding bg-white">
         <div className="container-custom">
           <SectionHeading
-            title="My Approach to Selling"
-            subtitle="Selling your home isn't just about listing it. It's about creating a strategy that gets results."
+            title="A Strategic Approach to Selling"
+            subtitle="Selling your home is about more than just putting it on the MLS. It's about a plan that actually gets people through the door."
           />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
@@ -111,8 +111,8 @@ export default function Sellers() {
                   },
                   {
                     icon: <Clock className="w-5 h-5" />,
-                    title: 'Consistent Communication',
-                    desc: "You'll never wonder what's happening with your listing. I provide regular updates on showings, feedback, and any market shifts that might affect your sale.",
+                    title: 'Straightforward Communication',
+                    desc: "You'll never have to wonder what's going on with your home. I'll give you regular updates on showings, honest feedback, and my take on any market shifts.",
                   },
                   {
                     icon: <CheckCircle className="w-5 h-5" />,
